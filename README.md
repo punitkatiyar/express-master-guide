@@ -10,7 +10,7 @@
 
 ## create app.js  
 
-## node app
+## Express app
 
 ```
 const express = require('express')
@@ -26,3 +26,7 @@ app.listen(port, () => {
 })
 
 ```
+
+## RUN The App
+
+> node app
