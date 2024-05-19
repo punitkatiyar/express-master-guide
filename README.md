@@ -2,7 +2,9 @@
 
 ## Install Express Js
 
+> npm init -y
 
+> Entry File Index.js
 
 > npm install express
 
