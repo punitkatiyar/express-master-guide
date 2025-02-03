@@ -1,4 +1,14 @@
-# express-master-guide
+# express master guide
+
+## Express.js Learning Prerequisites
+
+Before diving into Express.js, you should have a basic understanding of:
+
+✅ JavaScript (ES6+ features)
+
+✅ Node.js and npm (Node Package Manager)
+
+✅ Asynchronous programming (Promises, async/await)
 
 ## Install Express Js
 
