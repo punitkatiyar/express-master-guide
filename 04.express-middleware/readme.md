@@ -6,9 +6,9 @@ Middleware in Express.js is a function that executes during the request-response
 
 - Application-Level	Applies globally using app.use() (e.g., logging, authentication).
 
-- Router-Level	Used for specific routes using router.use() (e.g., route-specific authentication).
+- Router-Level	Used for specific routes using router.use().
 
-- Built-in Middleware	Includes express.json(), express.urlencoded(), and express.static().
+- Built-in Middleware	Includes express.json().
 
 - Error-Handling	Handles errors with (err, req, res, next).
 
