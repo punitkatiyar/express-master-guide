@@ -13,3 +13,17 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 ```
+
+## Response Methods
+
+- send()
+
+- json()
+
+- redirect()
+
+- render()
+
+- download()
+
+- sendFile()
