@@ -9,3 +9,22 @@ A template engine enables you to use static template files in your application. 
 - handlebars : https://www.npmjs.com/package/handlebars
 
 - ejs : https://www.npmjs.com/package/ejs
+
+## EJS Template Tag Syntax
+
+- <% %>
+
+- <%= %>
+
+- <%- %>
+
+- <%# %>
+
+- <%  -%>
+
+- <%_ %>
+
+- <%  _%>
+
+
+
