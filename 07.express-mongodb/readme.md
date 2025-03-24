@@ -44,9 +44,9 @@ const userSchema = mongoose.Schema({
     }
 })
 
-const user = mongoose.model("students", userSchema)
+const students = mongoose.model("students", userSchema)
 
-module.exports = user
+module.exports = students
 ```
 
 ## Import Schema to App
@@ -54,6 +54,26 @@ module.exports = user
 ```
 const user = require("./models/user.models");
 ```
+
+## Display Data
+
+```
+app.get('/',async(req,res)=>{
+ const students=await Students.find()
+ res.render('home',{students})
+})
+
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
