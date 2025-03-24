@@ -12,12 +12,50 @@
 
 - npm i mongoose
 
-## Setup Mongoose
-
+## Connection Setup with express
+ 
 ```
 const mongoose=require('mongoode')
 
 mongoose.connect('mongodb://127.0.0.1:27017/database-nane')
 
 ```
+
+## Create Schema
+
+```
+const mongoose = require('mongoose');
+
+const userSchema = mongoose.Schema({
+    first_name: {
+        type: String
+    },
+    last_name: {
+        type: String
+    },
+    email: {
+        type: String
+    },
+    mobile: {
+        type: String
+    },
+    course: {
+        type: String
+    }
+})
+
+const user = mongoose.model("students", userSchema)
+
+module.exports = user
+```
+
+## Import Schema to App
+
+```
+const user = require("./models/user.models");
+```
+
+
+
+
 
