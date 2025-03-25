@@ -37,7 +37,33 @@ res.render("home",{title:"Home Page"})
 
 - <%  _%>
 
-# Loope with ejs Example
+## Hello with EJS
+
+```
+<h1> <%= title %></h1>
+```
+
+## Control Statement in EJS
+
+```
+
+<% if(title) { %>
+  <h1> <%= title %></h1>
+<% } %>
+
+
+<% if(title) { %>
+  <h1> <%= title %></h1>
+<% } else { %>
+  <h1> <%= title %></h1>
+<% } %>
+```
+
+
+
+
+
+## Loope with ejs Example
 
 ```
 <ul>
