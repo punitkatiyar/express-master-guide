@@ -73,6 +73,25 @@ res.render("home",{title:"Home Page"})
 </ul>
 ```
 
+## Array loop with EJS
+
+```
+<% let items=["a","b","c",'d'] %>
+
+<ul>
+  <% items.forEach(item=>{ %>
+    <li>Item <% = item %> </li>
+  <% }) %>
+</ul>
+
+```
+
+
+
+
+
+
+
 
 
 
