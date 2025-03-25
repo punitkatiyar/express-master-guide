@@ -10,6 +10,17 @@ A template engine enables you to use static template files in your application. 
 
 - ejs : https://www.npmjs.com/package/ejs
 
+## Setup ejs on express project
+
+```
+app.set('view engine','ejs');
+
+res.render("home",{title:"Home Page"})
+
+```
+
+
+
 ## EJS Template Tag Syntax
 
 - <% %>
