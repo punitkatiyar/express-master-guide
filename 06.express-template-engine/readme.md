@@ -26,5 +26,16 @@ A template engine enables you to use static template files in your application. 
 
 - <%  _%>
 
+# Loope with ejs Example
+
+```
+<ul>
+  <% for(let i=1;i<=5;i++) { %>
+    <li>Item <% = i %> </li>
+  <% } %>
+</ul>
+```
+
+
 
 
