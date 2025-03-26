@@ -1,6 +1,13 @@
-# response method in express 
+## Response Methods
 
-- res.send
-- res.json
-- res.jsonp
-- 
+- send()
+
+- json()
+
+- redirect()
+
+- render()
+
+- download()
+
+- sendFile()
