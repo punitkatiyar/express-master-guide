@@ -57,13 +57,13 @@ const user = require("./models/user.models");
 
 ## Mongoose Command for CRUD
 
-- Create : create( )
+- **Create : create( )**
 
-- Read : findById( )
+- **Read : findById( )**
 
-- Update : findByIdAndUpdate( )
+- **Update : findByIdAndUpdate( )**
 
-- Delete : findByIdAndDelete( )
+- **Delete : findByIdAndDelete( )**
 
 ## Display Data
 
