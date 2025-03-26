@@ -55,6 +55,16 @@ module.exports = students
 const user = require("./models/user.models");
 ```
 
+## Mongoose Command for CRUD
+
+- Create : create( )
+
+- Read : findById( )
+
+- Update : findByIdAndUpdate( )
+
+- Delete : findByIdAndDelete( )
+
 ## Display Data
 
 ```
