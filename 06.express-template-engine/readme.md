@@ -85,6 +85,27 @@ res.render("home",{title:"Home Page"})
 </ul>
 
 ```
+## image and css use in EJS
+
+```
+```
+
+## Template Partials (Part)
+
+```
+<%- include('header') -%>
+
+
+```
+
+
+
+
+
+
+
+
+
 
 
 
