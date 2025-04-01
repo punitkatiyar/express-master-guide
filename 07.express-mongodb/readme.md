@@ -75,6 +75,21 @@ app.get('/',async(req,res)=>{
 
 ```
 
+## Insert Data
+
+```
+app.post('/insert', async (req, res) => {
+    await students.insertOne({
+        first_name: req.body.first_name,
+        last_name: req.body.last_name,
+        email: req.body.email,
+        mobile: req.body.mobile,
+        course: req.body.course,
+    })
+    // res.send(req.body)
+    res.redirect("/")
+})
+```
 
 
 
