@@ -2,9 +2,11 @@
 
 Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on).
 
-- **Home page URL** :: http://localhost:3000
-- **Sub Page URL** :: http://localhost:3000/blog
-- **Nested Page URL** :: http://localhost:3000/blog/tech
+- **Home page Route** :: http://localhost:3000
+- **Sub Page Route** :: http://localhost:3000/blog
+- **Nested Page Route** :: http://localhost:3000/blog/tech
+- **Route Parameter** :: http://localhost:3000/blog/1
+- **Query Parameters** :: http://localhost:3000/search?name=tech
 
 
 
