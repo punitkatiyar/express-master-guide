@@ -15,7 +15,7 @@
 ## Connection Setup with express
  
 ```
-const mongoose=require('mongoode')
+const mongoose = require('mongoose')
 
 mongoose.connect('mongodb://127.0.0.1:27017/database-nane')
 
