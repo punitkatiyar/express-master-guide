@@ -2,13 +2,43 @@
 
 Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on).
 
+## Type of Route in express
+
 - **Home page Route** :: http://localhost:3000
 - **Sub Page Route** :: http://localhost:3000/blog
 - **Nested Page Route** :: http://localhost:3000/blog/tech
 - **Route Parameter** :: http://localhost:3000/blog/1
 - **Query Parameters** :: http://localhost:3000/search?name=tech
 
+## Route Methods
 
+- get
+- post
+- put
+- delete
+
+## Define the Route
+
+```
+app.get('/',(req,res)=>{
+  res.send("<h1>Welcome to Home Page</h1>")
+})
+
+app.post('/',(req,res)=>{
+  
+})
+
+app.put('/',(req,res)=>{
+  
+})
+
+app.delete('/',(req,res)=>{
+  
+})
+
+
+
+```
 
 
 
@@ -17,10 +47,11 @@ Routing refers to determining how an application responds to a client request to
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
+
+
 
 module.exports = router;
 ```
