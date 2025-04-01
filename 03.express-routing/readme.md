@@ -24,6 +24,18 @@ app.get('/',(req,res)=>{
   res.send("<h1>Welcome to Home Page</h1>")
 })
 
+app.get('/blog',(req,res)=>{
+  res.send("<h1>Welcome to Blog Page</h1>")
+})
+
+app.get('/blog/:id',(req,res)=>{
+  res.send(req.params)
+})
+
+app.get('/blog/:blogid/post/:postid',(req,res)=>{
+  res.send(req.params.blogid)
+})
+
 app.post('/',(req,res)=>{
   
 })
@@ -36,10 +48,7 @@ app.delete('/',(req,res)=>{
   
 })
 
-
-
 ```
-
 
 
 ## Example 1
