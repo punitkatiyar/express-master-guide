@@ -36,16 +36,8 @@ app.get('/blog/:blogid/post/:postid',(req,res)=>{
   res.send(req.params.blogid)
 })
 
-app.post('/',(req,res)=>{
-  
-})
-
-app.put('/',(req,res)=>{
-  
-})
-
-app.delete('/',(req,res)=>{
-  
+app.get('/search',(req,res)=>{
+  res.send(req.query)
 })
 
 ```
