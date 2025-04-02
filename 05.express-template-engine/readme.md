@@ -1,8 +1,8 @@
 # Template Engine
 
-A template engine enables you to use static template files in your application. At runtime, the template engine replaces variables in a template file with actual values, and transforms the template into an HTML file sent to the client. This approach makes it easier to design an HTML page.
+**A template engine enables you to use static template files in your application. At runtime, the template engine replaces variables in a template file with actual values, and transforms the template into an HTML file sent to the client. This approach makes it easier to design an HTML page.**
 
-# Template Engine
+## Template Engine
 
 - pugjs :  https://pugjs.org/api/getting-started.html
 
@@ -18,8 +18,6 @@ app.set('view engine','ejs');
 res.render("home",{title:"Home Page"})
 
 ```
-
-
 
 ## EJS Template Tag Syntax
 
@@ -46,7 +44,6 @@ res.render("home",{title:"Home Page"})
 ## Control Statement in EJS
 
 ```
-
 <% if(title) { %>
   <h1> <%= title %></h1>
 <% } %>
@@ -58,10 +55,6 @@ res.render("home",{title:"Home Page"})
   <h1> <%= title %></h1>
 <% } %>
 ```
-
-
-
-
 
 ## Loope with ejs Example
 
@@ -90,7 +83,6 @@ res.render("home",{title:"Home Page"})
 
 ```
 <%- include('header') -%>
-
 
 ```
 
