@@ -3,7 +3,6 @@
 ## send( )  :: text , html , object , array , Buffer 
 
 ```
-
 res.send("Hello")
 res.send("<h1>Hello</h1>");
 
@@ -18,7 +17,11 @@ res.send(
 );
 
 res.send([1, 2, 3, 4, 5]);
+```
 
+## json()  :: JSON
+
+```
 let data = [
   { name: "punit", course: "Node" },
   { name: "punit", course: "Node" },
@@ -26,20 +29,8 @@ let data = [
   { name: "punit", course: "Node" },
 ]
 res.json(data)
-
 ```
 
-
-
-
-
-
-
-
-
-
-
-- json()  :: JSON
 
 - redirect()  :: 
 
