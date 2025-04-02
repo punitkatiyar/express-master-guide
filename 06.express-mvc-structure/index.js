@@ -1,7 +1,6 @@
-const express = require('express');
-const colors = require('colors');
-
-// const userRouters = require("./routes/userRouters")
+import  express from 'express';
+import {connectDB} from './config/database.js';
+import userRouters from "./routes/userRouters";
 
 const app = express();
 const port = 5000;
