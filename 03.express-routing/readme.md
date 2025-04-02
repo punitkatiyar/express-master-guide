@@ -10,6 +10,11 @@ Routing refers to determining how an application responds to a client request to
 - **Route Parameter** :: http://localhost:3000/blog/1
 - **Query Parameters** :: http://localhost:3000/search?name=tech
 
+## Testing tools
+
+- Thunder Client
+- Postman
+
 ## Route Methods
 
 - get
