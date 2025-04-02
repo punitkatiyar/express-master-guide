@@ -1,12 +1,12 @@
 ## Response Methods
 
-- send()
+- send( )  :: text , html , object , array , Buffer 
 
-- json()
+- json()  :: JSON
 
-- redirect()
+- redirect()  :: 
 
-- render()
+- render()  ::
 
 - download()
 
