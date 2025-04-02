@@ -22,6 +22,9 @@ res.send([1, 2, 3, 4, 5]);
 ## json()  :: JSON
 
 ```
+res.json({ name: "punit", course: "node" }
+
+
 let data = [
   { name: "punit", course: "Node" },
   { name: "punit", course: "Node" },
@@ -36,6 +39,11 @@ res.json(data)
 
 - render()  ::
 
-- download()
+## download()
+
+```
+res.download("./download/mern.pdf", "mern-with-ai.pdf")
+```
+
 
 - sendFile()
