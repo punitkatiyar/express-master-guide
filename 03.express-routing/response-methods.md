@@ -46,4 +46,9 @@ res.download("./download/mern.pdf", "mern-with-ai.pdf")
 ```
 
 
-- sendFile()
+## sendFile()
+
+```
+res.sendFile(__dirname + "/download/mern.pdf")
+```
+
