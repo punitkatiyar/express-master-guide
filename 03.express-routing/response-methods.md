@@ -34,7 +34,6 @@ let data = [
 res.json(data)
 ```
 
-
 - redirect()  :: 
 
 - render()  ::
@@ -52,3 +51,10 @@ res.download("./download/mern.pdf", "mern-with-ai.pdf")
 res.sendFile(__dirname + "/download/mern.pdf")
 ```
 
+## set() and get()
+
+```
+    res.set('custom-header', "Punit")
+    console.log(res.get("custom-header"))
+    res.send("header Set");
+```
