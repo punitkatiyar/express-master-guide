@@ -19,7 +19,7 @@ app.use(session({
 
 // Route to set session data
 app.get('/login', (req, res) => {
-  req.session.username = 'john_doe'; // Set session variable
+  req.session.username = 'ducat india'; // Set session variable
   res.send('User logged in and session created');
 });
 
