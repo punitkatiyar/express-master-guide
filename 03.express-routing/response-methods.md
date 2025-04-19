@@ -26,10 +26,10 @@ res.json({ name: "punit", course: "node" }
 
 
 let data = [
-  { name: "Dharmendra", course: "Node" },
-  { name: "Dharmendra", course: "Node" },
-  { name: "Dharmendra", course: "Node" },
-  { name: "Dharmendra", course: "Node" },
+  { name: "punit", course: "Node" },
+  { name: "punit", course: "Node" },
+  { name: "punit", course: "Node" },
+  { name: "punit", course: "Node" },
 ]
 res.json(data)
 ```

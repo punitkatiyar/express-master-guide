@@ -1,1 +1,84 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: left;
+      margin-left: 38%;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input {
+      width: 94%;
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <h1>Welcome, <%= username %>!</h1>
+    <form action="/profile" method="get">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter name"
+        required
+      />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter email"
+        required
+      />
+      <label for="age">Age</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        placeholder="Enter age"
+        required
+      />
+      <button type="submit">Go to Profile</button>
+    </form>
+  </body>
+</html>
