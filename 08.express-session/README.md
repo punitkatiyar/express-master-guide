@@ -2,6 +2,18 @@
 
 > npm install  express-session
 
+## define session
+
+```
+
+app.use(session({
+  secret: 'mysecretkey',       // Used to sign the session ID cookie
+  resave: false,               // Don’t save session if unmodified
+  saveUninitialized: true      // Save new sessions (even if not modified)
+}));
+
+```
+
 ```
 const express = require('express');
 const session = require('express-session');
