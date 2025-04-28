@@ -6,7 +6,7 @@
 - express-session 
 
 ```
-npm i express ejs mongoose body-parser express-session
+npm i express ejs mongoose express-session
 
 ```
 
