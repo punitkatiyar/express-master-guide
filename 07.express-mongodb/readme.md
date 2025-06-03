@@ -21,12 +21,12 @@ mongoose.connect('mongodb://127.0.0.1:27017/database-nane')
 
 ```
 
-## Create Schema
+> Create Schema :: students.models.js
 
 ```
 const mongoose = require('mongoose');
 
-const userSchema = mongoose.Schema({
+const studentSchema = mongoose.Schema({
     first_name: {
         type: String
     },
@@ -44,9 +44,9 @@ const userSchema = mongoose.Schema({
     }
 })
 
-const students = mongoose.model("students", userSchema)
+const student = mongoose.model("Student", studentSchema)
 
-module.exports = students
+module.exports = student
 ```
 
 ## Import Schema to App
