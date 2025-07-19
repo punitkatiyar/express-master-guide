@@ -10,8 +10,11 @@
 
 > npm i jsonwebtoken
 
+1. **Generate Token**
+
 ```
 const jwt=require('jsonwebtoken')
 
 const token=jwt.sign({key:value},SECRET_KEY,{expiresin:'1h'});
+
 ```
