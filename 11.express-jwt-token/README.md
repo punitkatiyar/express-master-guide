@@ -25,6 +25,61 @@ npm install express jsonwebtoken dotenv
 
 ```
 
+## Example 
+
+```
+require('dotenv').config();
+const express = require('express');
+const jwt = require('jsonwebtoken');
+
+const app = express();
+app.use(express.json()); // Parse JSON bodies
+
+const users = [
+  { id: 1, username: 'test', password: 'pass123' } // Mock data for demo
+];
+
+// Generate JWT Token
+function generateToken(user) {
+  return jwt.sign({ id: user.id, username: user.username }, process.env.JWT_SECRET, {
+    expiresIn: '1h'
+  });
+}
+
+// User login route
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+  // Check hardcoded credentials for simplicity
+  const user = users.find(
+    user => user.username === username && user.password === password
+  );
+  if (!user) return res.status(401).json({ message: 'Invalid credentials' });
+
+  const token = generateToken(user);
+  res.json({ token });
+});
+
+// Middleware to authenticate token for protected routes
+function authenticateToken(req, res, next) {
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1]; // 'Bearer TOKEN'
+  if (!token) return res.status(401).json({ message: 'Token missing' });
+  jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
+    if (err) return res.status(403).json({ message: 'Token is invalid' });
+    req.user = user;
+    next();
+  });
+}
+
+// Protected route example
+app.get('/profile', authenticateToken, (req, res) => {
+  res.json({ message: 'Profile data', user: req.user });
+});
+
+app.listen(3000, () => console.log('Server running on port 3000'));
+
+```
+
 
 
 
