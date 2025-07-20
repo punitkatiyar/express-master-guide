@@ -80,16 +80,18 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ```
 
+### How Does It Work?
+
+> Login: User submits credentials to /login. If they match, the server generates a JWT token and returns it.
+
+> Use the Token: The client saves this token (in local storage, cookies, etc.) and sends it as an Authorization: Bearer <token> header for protected routes.
+
+> Token Validation: For all protected routes (like /profile), a middleware checks the authenticity and validity of the JWT.
+
+> Access Granted: If the token is valid, access is provided; otherwise, an error is returned
 
 
 
 
 
-1. **Generate Token**
 
-```
-const jwt=require('jsonwebtoken')
-
-const token=jwt.sign({key:value},SECRET_KEY,{expiresin:'1h'});
-
-```
