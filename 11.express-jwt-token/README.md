@@ -12,8 +12,6 @@
 
 ## Setting Up JWT Authentication in Express.js
 
-1. Install Required Packages
-
 > express (web framework)
 
 > jsonwebtoken (to generate/verify JWTs)
