@@ -1,6 +1,6 @@
 ## Response Methods
 
-## send( )  :: text , html , object , array , Buffer 
+## send( ) :: text , html , object , array , Buffer
 
 ```
 res.send("Hello")
@@ -19,7 +19,7 @@ res.send(
 res.send([1, 2, 3, 4, 5]);
 ```
 
-## json()  :: JSON
+## json() :: JSON
 
 ```
 res.json({ name: "punit", course: "node" }
@@ -34,16 +34,15 @@ let data = [
 res.json(data)
 ```
 
-- redirect()  :: 
+- redirect() ::
 
-- render()  ::
+- render() ::
 
 ## download()
 
 ```
 res.download("./download/mern.pdf", "mern-with-ai.pdf")
 ```
-
 
 ## sendFile()
 
