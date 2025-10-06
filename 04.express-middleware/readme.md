@@ -46,6 +46,8 @@ app.use(checkToken);
 ////////////////////////////////////////////////////////
 ```
 
+<!--
+
 - body-parser	Parse HTTP request body.
 
 - compression	Compress HTTP responses.
@@ -79,7 +81,7 @@ app.use(checkToken);
 - timeout	Set a timeout perioHTTP request processing.
 
 - vhost	Create virtual domains.
-
+-->
 
 
 
