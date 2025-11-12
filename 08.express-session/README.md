@@ -1,25 +1,15 @@
-# Express Session 
+# Express Session
 
-> npm install  express-session
+*A session is a way to store data about a user on the server side between multiple HTTP requests.
+Since HTTP is stateless, the server doesn’t automatically remember who sent each request.
+Sessions solve that by assigning each client a unique Session ID, stored in a cookie in the browser.*
 
-## define session
+## Setup Session On Express App
 
-```
-
-app.use(session({
-  secret: 'mysecretkey',       // Used to sign the session ID cookie
-  resave: false,               // Don’t save session if unmodified
-  saveUninitialized: true      // Save new sessions (even if not modified)
-}));
+> npm install express-session
 
 ```
-
-```
-const express = require('express');
 const session = require('express-session');
-
-const app = express();
-const PORT = 3000;
 
 // Configure session middleware
 app.use(session({
@@ -29,18 +19,23 @@ app.use(session({
   cookie: { maxAge: 60000 }          // ⏰ Cookie lifetime (1 min)
 }));
 
+```
+
+# Express Route
+
+```
 // Route to set session data
-app.get('/login', (req, res) => {
-  req.session.username = 'ducat india'; // Set session variable
-  res.send('User logged in and session created');
+app.get('/set-session', (req, res) => {
+  req.session.username = 'Punit';
+  res.send('Session data set! 🧑‍💻');
 });
 
 // Route to access session data
-app.get('/profile', (req, res) => {
+app.get('/get-session', (req, res) => {
   if (req.session.username) {
-    res.send(`Welcome back, ${req.session.username}`);
+    res.send(`Welcome back, ${req.session.username}!`);
   } else {
-    res.send('Please login first.');
+    res.send('No session found 😕');
   }
 });
 
@@ -48,14 +43,16 @@ app.get('/profile', (req, res) => {
 app.get('/logout', (req, res) => {
   req.session.destroy(err => {
     if (err) {
-      return res.send('Error logging out.');
+      res.send('Error logging out');
+    } else {
+      res.clearCookie('connect.sid'); // clear cookie
+      res.send('Logged out successfully!');
     }
-    res.send('Logged out successfully!');
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
-
 ```
+
+
+
+
