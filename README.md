@@ -40,3 +40,19 @@ app.listen(port, () => {
 ## RUN The App
 
 > node app
+
+## Express is used in many real-world applications:
+
+> ✔ REST API development
+
+> ✔ E-commerce backend
+
+> ✔ Authentication system (JWT, OAuth)
+
+> ✔ Real-time apps with Socket.io
+
+> ✔ Logging & monitoring systems
+
+> ✔ File upload service
+
+> ✔ Microservices architecture
