@@ -27,7 +27,7 @@ npm install express jsonwebtoken dotenv
 
 ## Example 
 
-```
+```js
 require('dotenv').config();
 const express = require('express');
 const jwt = require('jsonwebtoken');
